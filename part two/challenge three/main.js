@@ -13,3 +13,25 @@
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m 
 // tall.
 // GOOD LUCK 
+const mark = {
+    fullName : 'mark miller',
+    mass : 78 ,
+    height : 1.69 , 
+    clacBMI : function () {
+       this.bmi = this.mass / this.height ** 2 ;
+        return this.bmi
+    }
+};
+
+const john = {
+    fullName : 'John Smith',
+    mass : 92 ,
+    height : 1.95 , 
+    clacBMI : function () {
+       this.bmi = this.mass / this.height ** 2 ;
+        return this.bmi
+    }
+};
+
+console.log(mark.clacBMI());
+console.log(john.clacBMI());
